@@ -19,14 +19,13 @@ For users of Kotlin + LibGDX, this repo contains convenient operator overloads f
 // Vector2
 val v1 = Vector2(1f, 0f)
 val v2 = Vector2(1f, 1f)
-v1 + v2 // 2f, 1f
-v1 * 4f // 8f, 4f
+v1 + v2 // v1 value is now 2f, 1f
+v1 * 4f // v1 value is now8f, 4f
 
 // Vector3
 val myPos = Vector3(100f, 0f, 0f)
 val enemyPos : Vector3(50f, 0f, 0f)
-val difference = Vector3(enemyPos) - myPos
-println(difference) // (-50f, 0f, 0f)
+val difference = Vector3(enemyPos) - myPos // difference refers to myPos, which has value (-50f, 0f, 0f)
 
 // StringBuilder
 
